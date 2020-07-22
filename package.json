@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:yujie0505/task-manager.git",
   "author": "YuJie <seven8355@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
 }
