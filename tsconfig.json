@@ -6,5 +6,7 @@
     "strict": true,
     "target": "ESNext"
   },
-  "include": ["src/**/*.ts"]
+  "include": [
+    "src/**/*.ts"
+  ]
 }
