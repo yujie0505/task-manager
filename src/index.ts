@@ -1,18 +1,18 @@
 "use strict";
 
-class TaskManager {
+export default class TaskManager {
   constructor() {
     this.queue = [];
+    this.time_delay = 1000;
+
     this.timer = setInterval(() => {
       const task = this.queue.shift();
 
       task && task();
-    }, 1000);
+    }, this.time_delay);
   }
 
-  publish(task) {
+  publish(task: Function) {
     this.queue.push(task);
   }
 }
-
-module.exports = TaskManager;

@@ -5,6 +5,9 @@
   "repository": "git@github.com:yujie0505/task-manager.git",
   "author": "YuJie <seven8355@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "transpile": "npx tsc"
+  },
   "devDependencies": {
     "typescript": "^3.9.7"
   }
