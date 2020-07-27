@@ -1,6 +1,10 @@
 "use strict";
 
 export default class TaskManager {
+  queue: Function[];
+  time_delay: number;
+  timer: number;
+
   constructor() {
     this.queue = [];
     this.time_delay = 1000;
