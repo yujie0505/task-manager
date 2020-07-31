@@ -9,6 +9,7 @@
     "transpile": "npx tsc"
   },
   "devDependencies": {
+    "@microsoft/tsdoc": "^0.12.20",
     "typescript": "^3.9.7"
   }
 }
