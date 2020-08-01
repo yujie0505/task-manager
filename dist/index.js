@@ -12,6 +12,9 @@ class TaskManager {
     #queue;
     #time_delay;
     #timer;
+    finish() {
+        clearInterval(this.#timer);
+    }
     publish(task) {
         this.#queue.push(task);
     }
