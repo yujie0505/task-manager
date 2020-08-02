@@ -12,6 +12,9 @@ class TaskManager {
     #queue;
     #time_delay;
     #timer;
+    get pendingCount() {
+        return this.#queue.length;
+    }
     finish() {
         clearInterval(this.#timer);
     }

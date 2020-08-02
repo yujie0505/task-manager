@@ -16,6 +16,10 @@ export default class TaskManager {
     }, this.#time_delay);
   }
 
+  get pendingCount() {
+    return this.#queue.length;
+  }
+
   finish() {
     clearInterval(this.#timer);
   }
