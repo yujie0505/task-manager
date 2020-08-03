@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class TaskManager {
-    constructor() {
+    constructor(time_delay = 1000) {
         this.#queue = [];
-        this.#time_delay = 1000;
+        this.#time_delay = time_delay;
         this.#timer = setInterval(() => {
             const task = this.#queue.shift();
             task && task();
