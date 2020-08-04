@@ -6,10 +6,12 @@
   "author": "YuJie <seven8355@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "test": "npx jest",
     "transpile": "npx tsc"
   },
   "devDependencies": {
     "@microsoft/tsdoc": "^0.12.20",
+    "jest": "^26.2.2",
     "typescript": "^3.9.7"
   }
 }
