@@ -3,7 +3,7 @@
 export default class TaskManager {
   #queue: Function[];
   #time_delay: number;
-  #timer: number;
+  #timer: NodeJS.Timeout;
 
   constructor(time_delay: number = 1000) {
     this.#queue = [];
