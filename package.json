@@ -6,12 +6,14 @@
   "author": "YuJie <seven8355@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "npx jest",
+    "test": "npx jest --preset ts-jest --testEnvironment node",
     "transpile": "npx tsc"
   },
   "devDependencies": {
     "@microsoft/tsdoc": "^0.12.20",
+    "@types/jest": "^26.0.9",
     "jest": "^26.2.2",
+    "ts-jest": "^26.1.4",
     "typescript": "^3.9.7"
   }
 }
