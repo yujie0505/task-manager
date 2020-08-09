@@ -3,7 +3,7 @@ name: CI
 # Triggers
 on:
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   unit-test:
@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
 
-    # Runs a single command using the runners shell
-    - name: Test CI
-      run: echo Hello, world!
+      # Runs a single command using the runners shell
+      - name: Test CI
+        run: echo Hello, world!
